@@ -1,0 +1,16 @@
+Write a menu driven program the following operation on an associative array
+#a) Reverse the order of each element’s key-value pair. [Hint: array_flip()]
+#b) Traverse the element in an array in random order. [Hint: shuffle()]
+
+$a = array(1=>10, 2=>20,3=>30,4=>40,5=>50);
+
+$rev = array_flip($a);
+
+print_r($rev);
+
+
+$b = array(1=>10, 2=>20,3=>30,4=>40,5=>50);
+ shuffle($b);
+print_r($b)
+
+?>

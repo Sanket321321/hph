@@ -1,0 +1,47 @@
+Write a PHP script for the following:
+a) Design a form to accept two numbers from the users.
+b) Give option to choose an arithmetic operation (use Radio Button).
+c) Display the result on next form.
+d) Use concept of default parameter
+-->
+
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <form method="GET" action="action.php">
+   Enter the number1:<input type="number" name="n1"><br>
+    Enter the number2:<input type="number" name="n2"><br>
+    select one:<br>  
+      Addition:<input type="radio" value="1" name="op"><br>
+      Subtraction:<input type="radio" value="2" name="op"><br>
+      Multiplication:<input type="radio" value="3" name="op"><br>
+      Division:<input type="radio" value="4" name="op"><br>
+
+      <button type="submit">submit</button>
+  </body>
+</html>
+
+php file 
+<?php 
+function perform(){
+  $n1 = $_GET['n1'];
+  $n2 = $_GET['n2'];
+  $op = $_GET['op']; 
+    if($op=='1'){
+      echo "Addition is:".$n1+$n2;
+    }
+    elseif($op==2){
+      echo "subtraction is:".$n1-$n2;
+    }
+    elseif($op==3){
+      echo "multiplication is:".$n1*$n2;
+    }
+    elseif($op==4){
+      echo "Division is:".$n1/$n2;
+    }
+  }
+
+perform() ;
+?>

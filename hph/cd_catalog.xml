@@ -1,0 +1,80 @@
+Write a AJAX program to fetch information from XML file. The XML file looks like
+this: “cd_catalog.xml” [ Enter at least 10 records inXML file
+-->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<CATALOG>
+<CD>
+  <TITLE>xyz</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>IBM</COMPANY>
+  <PRICE>500</PRICE>
+  <YEAR>2015</YEAR>
+</CD>
+
+<CD>
+  <TITLE>qwe</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>TCS</COMPANY>
+  <PRICE>570</PRICE>
+  <YEAR>2019</YEAR>
+</CD>
+
+<CD>
+  <TITLE>mno</TITLE>
+  <ARTIST>kpl</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>MPL</COMPANY>
+  <PRICE>580</PRICE>
+  <YEAR>2019</YEAR>
+</CD>
+
+<CD>
+  <TITLE>xyz</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>IBM</COMPANY>
+  <PRICE>500</PRICE>
+  <YEAR>2015</YEAR>
+</CD>
+
+<CD>
+  <TITLE>xyz</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>IBM</COMPANY>
+  <PRICE>500</PRICE>
+  <YEAR>2015</YEAR>
+</CD>
+
+<CD>
+  <TITLE>xyz</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>IBM</COMPANY>
+  <PRICE>500</PRICE>
+  <YEAR>2015</YEAR>
+</CD>
+
+<CD>
+  <TITLE>xyz</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>IBM</COMPANY>
+  <PRICE>500</PRICE>
+  <YEAR>2015</YEAR>
+</CD>
+
+<CD>
+  <TITLE>xyz</TITLE>
+  <ARTIST>abc</ARTIST>
+  <COUNTRY>india</COUNTRY>
+  <COMPANY>IBM</COMPANY>
+  <PRICE>500</PRICE>
+  <YEAR>2015</YEAR>
+</CD>
+</CATALOG>

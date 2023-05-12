@@ -1,0 +1,117 @@
+Write a PHP script to create a Class shape and its subclass triangle, square and display
+area of the selected shape.( use the concept of Inheritance) . Display menu (use radio button)
+a)Triangle
+b)Square
+c)Rectangle
+d)Circle
+-->
+
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <form method="GET" action="class.php">
+
+     selece one:<br>
+     Triangle : <input type="radio" value="1" name="c_name"><br>
+     Square   :<input type="radio" value="2" name="c_name"><br>
+     Rectangle:<input type="radio" value="3" name="c_name"><br>
+     Circle   :<input type="radio" value="4" name="c_name"><br>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
+
+<?php 
+
+$c = $_GET['c_name'];
+
+class shape{
+  function dis(){
+    echo "<br>Main function<br>";
+  }
+}
+
+class Square extends shape{
+ public $s;
+ public $a;
+  function area($a){
+    $this->s = $a;
+    $this->a = $this->s * $this->s;
+  }
+  function display(){
+    echo "Area of square is:".$this->a;
+  }
+}
+
+class Rectangle extends shape{
+ public $l;
+ public $w;
+ public $a;
+  function area($a,$b){
+    $this->l = $a;
+    $this->w = $b;
+    $this->a = $this->l * $this->w;
+  }
+  function display(){
+    echo "Area of Rectangle is:".$this->a;
+  }
+} 
+
+
+class Triangle extends shape{
+ public $l;
+ public $w;
+ public $a;
+  function area($a,$b){
+    $this->l = $a;
+    $this->w = $b;
+    $this->a = (1/2)*$this->l * $this->w;
+  }
+  function display(){
+    echo "Area of Triangle is:".$this->a;
+  }
+}
+
+class Circle extends shape{
+ public $r;
+ public $pi;
+ public $a;
+  function area($a,$b){
+    $this->r = $a;
+    $this->pi = $b;
+    $this->a = $this->pi * $this->r *$this->r;
+  }
+  function display(){
+    echo "Area of circle is:".$this->a;
+  }
+}
+
+
+
+if($c == 1){
+  $obj = new Triangle;
+  $obj->area(10,20) ;
+  $obj->display();
+  $obj->dis();
+}
+elseif($c==2){
+  $obj = new Square;
+  $obj->area(20);
+  $obj->display() ;
+  $obj->dis() ;
+}
+elseif($c == 3){
+  $obj = new Rectangle;
+  $obj->area(10,20) ;
+  $obj->display();
+  $obj->dis();
+}
+elseif($c == 4){
+  $obj = new Circle;
+  $obj->area(10,3.14) ;
+  $obj->display();
+  $obj->dis();
+}
+?>

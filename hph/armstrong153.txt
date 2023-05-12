@@ -1,0 +1,21 @@
+<?php
+
+$num = 153;
+$rem = 0;
+$sum =0;
+$n = $num;
+$l = strlen((string)$num); 
+
+while ($num > 0) {
+ $rem = $num % 10;
+ $sum = $sum + pow($rem, $l);
+ $num = $num/10;
+}
+
+if($sum == $n){
+  echo "Number is Amostrong";
+}
+else{
+  echo "Number is not Amostrong";
+}
+?>

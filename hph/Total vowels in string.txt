@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <form method="GET" action="abc.php">
+      Enter the string:<input type="text" name="str"><br>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
+
+php file
+<?php 
+  $str = $_GET['str'];
+  $str = strtolower($str);
+  $v=0;
+  $a=0;$e=0;$ii=0;$o=0;$u=0;
+  
+  $arr = array('a', 'e', 'i', 'o', 'u');
+  for($i=0;$i<strlen($str);$i++){
+    if(in_array($str[$i],$arr)) {
+      $v +=1;
+    }
+  }
+echo "Total vowels in string is:".$v;
+
+for($i=0;$i<strlen($str);$i++){
+  switch($str[$i]){
+    case 'a':
+    $a+=1;
+    break;
+
+    case 'e':
+    $e+=1;
+    break;
+
+   case 'i':
+    $ii+=1;
+    break;
+   
+    case 'o':
+    $o+=1;
+    break;
+
+    case 'u':
+    $u+=1;
+    break;
+  }
+}
+echo "<br>total a in the string is:".$a;
+echo "<br>total e in the string is:".$e;
+echo "<br>total i in the string is:".$ii;
+echo "<br>total o in the string is:".$o;
+echo "<br>total u in the string is:".$u;
+
+
+?>

@@ -1,0 +1,8 @@
+<?php
+if(10>20){
+  echo "10 is greater";
+}
+else{
+  echo "20 is greater";
+}
+?>

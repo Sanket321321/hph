@@ -1,0 +1,19 @@
+Write a PHP script to print following floyd’s triangle.
+A
+B C
+D E F
+G H I J
+*/
+
+$a = 65;
+
+for($i=0;$i<5;$i++){
+  for($j=0;$j<$i;$j++){
+    $ch = chr($a);
+    echo $ch." ";
+    $a++;
+  } 
+  print ("\n");
+}
+
+?>

@@ -1,0 +1,17 @@
+Write a PHP script to declare three variables and print maximum among them.
+
+$a = 10;
+$b = 70;
+$c = 30;
+
+if($a>$b && $a > $c){
+  echo "$a is greater";
+}
+elseif($b > $c){
+  echo "$b is greater";
+}
+else{
+  echo "$c is greater";
+}
+
+?>

@@ -1,0 +1,18 @@
+Write a PHP script to display source code of a webpage.
+-->
+
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <?php 
+      $url = 'https://google.com';
+      $html = file_get_contents($url);
+      $html = htmlspecialchars($html);
+      echo $html;
+    ?> 
+
+
+  </body>
+</html>

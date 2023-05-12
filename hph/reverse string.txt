@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <form method="GET" action="abc.php">
+      Enter the string:<input type="text" name="str">
+      <br>
+    <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
+
+php file
+<?php 
+
+$s = $_GET['str'];
+
+$rev = strrev($s);
+
+echo "Reverse string is:".$rev;
+
+?>
